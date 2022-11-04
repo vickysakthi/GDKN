@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.imgbox {
+  float: left;
+  text-align: center;
+  width: 120px;
+  border: 1px solid gray;
+  margin: 4px;
+  padding: 6px;
+}
+
+button {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+
+<h3>Difference between display:none and visiblity: hidden</h3>
+<p><strong>visibility:hidden</strong>
+     hide the elements. It take up space in the layout.</p>
+<p><strong>display:none</strong>
+    remove the elements.in does not not take up any space
+    </p>
+
+<div class="imgbox" id="imgbox1">Box 1<br>
+  <img src="img1.jpg" alt="Italy" style="width:100%">
+  <button onclick="removeElement()">Remove</button>
+</div>
+
+<div class="imgbox" id="imgbox2">Box 2<br>
+  <img src="imd2.jpg" alt="Lights" style="width:100%">
+  <button onclick="changeVisibility()">Hide</button>
+</div>
+<script>
+function removeElement() {
+  document.getElementById("imgbox1").style.display = "none";
+}
+function changeVisibility() {
+  document.getElementById("imgbox2").style.visibility = "hidden";
+}
+</script>
+</body>
+</html>
+
+
